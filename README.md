@@ -46,7 +46,8 @@ Due to the limited resources, I use 100 as BiLSTM's hidden vector size,
 and the batch size of 128. One should be able to adjust it accordingly to
 achieve better accuracy. (the paper recommended the batch size of 64)
 Based on my experiments, the model achieved 0.77 as accuracy on SNLI after 12
-epochs with encoded_dim of 512 and optimiazation algorithm as 'sgd'.  
+epochs(when learning rate is still very large; compared to the paper's stopping criteria:  
+when learning rate < 10^-5) with encoded_dim of 512 and optimiazation algorithm as 'sgd'.    
 
 I didn't try the resulted sentence embeddings in any downstream NLP
 tasks. I provided the code for generating sentence embeddings based on
